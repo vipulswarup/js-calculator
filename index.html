@@ -12,9 +12,8 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="calculator.js"></script>
     <div class="calculatorBody">
-      <div class="calculatorDisplay">
+      <div class="calculatorDisplay" id="calcDisplay">
         0
       </div>
       <button
@@ -60,13 +59,6 @@
       <button class="calculatorButton calculatorButton-number">.</button>
       <button class="calculatorButton calculatorButton-operator">=</button>
     </div>
-    <script>
-      document
-        .querySelector(".calculatorBody")
-        .addEventListener("click", function(event) {
-          alert(`You clicked ${event.target.innerText}`);
-          console.log(`You clicked ${event.target.innerText}`);
-        });
-    </script>
+    <script src="calculator.js"></script>
   </body>
 </html>
