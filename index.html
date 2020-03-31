@@ -8,53 +8,65 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
+
     <title>Document</title>
   </head>
   <body>
+    <script src="calculator.js"></script>
     <div class="calculatorBody">
       <div class="calculatorDisplay">
         0
       </div>
-      <div
+      <button
         class="calculatorButton calculatorButton-number"
         style="background-color:rgb(72,72,74);"
       >
         AC
-      </div>
-      <div
+      </button>
+      <button
         class="calculatorButton calculatorButton-number"
         style="background-color:rgb(72,72,74);"
       >
         +/-
-      </div>
-      <div
+      </button>
+      <button
         class="calculatorButton calculatorButton-number"
         style="background-color:rgb(72,72,74);"
       >
         %
-      </div>
-      <div class="calculatorButton calculatorButton-operator">&divide;</div>
+      </button>
+      <button class="calculatorButton calculatorButton-operator">
+        &divide;
+      </button>
 
-      <div class="calculatorButton calculatorButton-number">7</div>
-      <div class="calculatorButton calculatorButton-number">8</div>
-      <div class="calculatorButton calculatorButton-number">9</div>
-      <div class="calculatorButton calculatorButton-operator">x</div>
-      <div class="calculatorButton calculatorButton-number">4</div>
-      <div class="calculatorButton calculatorButton-number">5</div>
-      <div class="calculatorButton calculatorButton-number">6</div>
-      <div class="calculatorButton calculatorButton-operator">-</div>
-      <div class="calculatorButton calculatorButton-number">1</div>
-      <div class="calculatorButton calculatorButton-number">2</div>
-      <div class="calculatorButton calculatorButton-number">3</div>
-      <div class="calculatorButton calculatorButton-operator">+</div>
-      <div
+      <button class="calculatorButton calculatorButton-number">7</button>
+      <button class="calculatorButton calculatorButton-number">8</button>
+      <button class="calculatorButton calculatorButton-number">9</button>
+      <button class="calculatorButton calculatorButton-operator">x</button>
+      <button class="calculatorButton calculatorButton-number">4</button>
+      <button class="calculatorButton calculatorButton-number">5</button>
+      <button class="calculatorButton calculatorButton-number">6</button>
+      <button class="calculatorButton calculatorButton-operator">-</button>
+      <button class="calculatorButton calculatorButton-number">1</button>
+      <button class="calculatorButton calculatorButton-number">2</button>
+      <button class="calculatorButton calculatorButton-number">3</button>
+      <button class="calculatorButton calculatorButton-operator">+</button>
+      <button
         class="calculatorButton calculatorButton-number"
         style=" width: 100.1px;"
       >
         0
-      </div>
-      <div class="calculatorButton calculatorButton-number">.</div>
-      <div class="calculatorButton calculatorButton-operator">=</div>
+      </button>
+      <button class="calculatorButton calculatorButton-number">.</button>
+      <button class="calculatorButton calculatorButton-operator">=</button>
     </div>
+    <script>
+      document
+        .querySelector(".calculatorBody")
+        .addEventListener("click", function(event) {
+          alert(`You clicked ${event.target.innerText}`);
+          console.log(`You clicked ${event.target.innerText}`);
+        });
+    </script>
   </body>
 </html>
